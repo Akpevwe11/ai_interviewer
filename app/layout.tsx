@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "AI Interviewer",
-  description: "Generate tailored interview questions for any job title using AI",
+  title: "Welcome",
+  description: "Generate tailored interview questions for your given job title",
 };
 
 export default function RootLayout({

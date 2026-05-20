@@ -56,7 +56,7 @@ export default function HomePage() {
             AI Interviewer
           </h1>
           <p className="mt-2 text-slate-500">
-            Enter a job title to generate tailored interview questions
+            Enter a job title to generate tailored interview questions for your given job title
           </p>
         </header>
 

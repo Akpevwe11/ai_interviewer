@@ -1,7 +1,7 @@
 import { CopilotClient, approveAll } from "@github/copilot-sdk";
 
-const MODEL_NAME = "gpt-4.1";
-const QUESTION_COUNT = 3;
+const MODEL_NAME = process.env.MODEL_NAME ?? "gpt-4.1";
+const QUESTION_COUNT = Number(process.env.QUESTION_COUNT ?? 3);
 
 function buildPrompt(jobTitle: string): string {
   return (
