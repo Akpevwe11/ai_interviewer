@@ -35,8 +35,7 @@ export async function POST(
     const questions = await generateInterviewQuestions(jobTitle);
     return NextResponse.json({ questions }, { status: 200 });
   } catch (err) {
-    const message = err instanceof Error ? err.message : "Unexpected error";
-    console.error("[/api/interview]", message);
+   
     return NextResponse.json(
       { error: "Failed to generate questions. Please try again." },
       { status: 500 }
