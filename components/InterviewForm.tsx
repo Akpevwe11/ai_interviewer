@@ -24,10 +24,11 @@ export default function InterviewForm({
           type="text"
           value={jobTitle}
           onChange={(e) => onJobTitleChange(e.target.value)}
-          placeholder="e.g. Customer Success Manager, Software Engineer, Data Analyst"
+          placeholder="e.g. Software Developer, Frontend Developer, Backend Developer"
           maxLength={100}
           required
           disabled={isLoading}
+
           className="rounded-lg border border-slate-300 px-4 py-2.5 text-slate-800 placeholder-slate-400 shadow-sm transition focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 disabled:cursor-not-allowed disabled:bg-slate-100"
         />
       </div>
