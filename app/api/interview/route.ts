@@ -34,8 +34,7 @@ export async function POST(
   try {
     const questions = await generateInterviewQuestions(jobTitle);
     return NextResponse.json({ questions }, { status: 200 });
-  } catch (err) {
-   
+  } catch {
     return NextResponse.json(
       { error: "Failed to generate questions. Please try again." },
       { status: 500 }
