@@ -22,8 +22,9 @@ export async function generateInterviewQuestions(
   jobTitle: string
 ): Promise<string[]> {
   const githubToken = process.env.COPILOT_GITHUB_TOKEN;
-  if (!githubToken || githubToken === "your_github_token_here") {
-    throw new Error("Please set a valid COPILOT_GITHUB_TOKEN in .env.local");
+  if (!githubToken) {
+    throw new Error("An error occurred while generating interview questions");
+    
   }
 
   const client = new CopilotClient({
